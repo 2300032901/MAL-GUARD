@@ -1,0 +1,30 @@
+# Virtual environments and Python cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+# Local data and generated model artifacts
+datasets/static/*
+datasets/dynamic/*
+datasets/processed/*
+!datasets/static/.gitkeep
+!datasets/dynamic/.gitkeep
+!datasets/processed/.gitkeep
+models/*
+!models/static_model/
+!models/dynamic_model/
+!models/hybrid_model/
+models/static_model/*
+models/dynamic_model/*
+models/hybrid_model/*
+!models/static_model/.gitkeep
+!models/dynamic_model/.gitkeep
+!models/hybrid_model/.gitkeep
+
+# Test and editor artifacts
+.pytest_cache/
+.vscode/
